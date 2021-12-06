@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+}
+header .logo img {
+  height: 100px;
+  width: 200px;
+}
+header .menu {
+  margin-top: 30px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  margin-left: 30px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav ol {
+  display: flex;
+  list-style: none;
+}
+nav ol li {
+  margin: 10px;
+}
+section h1,
+p {
+  margin: 10px;
+}
+
+section .list_product {
+  display: flex;
+}
+section .list_product div {
+  border: solid black 2px;
+  padding: 10px;
+  margin: 10px;
+  width: fit-content;
+}
+section .list_product img {
+  width: 250px;
+  height: 200px;
+}
+section .list_product h2 {
+  margin: 10px;
+}
+section .list_product h5 {
+  margin-top: 10px;
+}
+section .list_product .RRP {
+  color: #b8afaf;
+}
+section .list_product .sv {
+  color: #2f7718;
+}
+
+/* media quiery pour site responsive*/
+@media screen and (max-width: 992px) {
+  section .list_product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section .list_product {
+    display: inline-block;
+  }
+  header ul {
+    display: inline-block;
+  }
+  header ul li {
+    margin: 10px;
+  }
+}
