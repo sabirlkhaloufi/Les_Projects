@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header .logo {
+  text-align: center;
+}
+header .logo img {
+  width: 150px;
+  height: 80px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+header li {
+  border: solid 1px black;
+  padding: 10px;
+  background-color: #dadcec;
+  border-radius: 10px;
+}
+nav ol {
+  display: flex;
+  margin: 10px;
+  list-style: none;
+}
+section h1 {
+  margin: 10px;
+}
+section p {
+  margin: 10px;
+}
+section .list_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .list_product div {
+  border: solid 2px black;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+}
+section .list_product img {
+  width: 350px;
+  height: 300px;
+}
+section .list_product h2 {
+  margin: 10px;
+}
+section .list_product h5 {
+  margin-top: 10px;
+}
+section .list_product .RRP {
+  color: #b8afaf;
+}
+section .list_product .price span {
+  text-decoration: underline;
+}
+section .list_product .sv {
+  color: #2f7718;
+}
+
+/* media query for responsive */
+@media screen and (min-width: 600px) {
+  section .list_product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    width: 100%;
+  }
+  section .list_product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  section .list_product img {
+    width: 200px;
+    height: 200px;
+  }
+  header .logo {
+    justify-content: start;
+    width: fit-content;
+  }
+  header .logo img {
+    width: 150px;
+    height: 80px;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  header .menu {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+  }
+  header li {
+    border: solid 1px black;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #dadcec;
+    border-radius: 10px;
+  }
+  nav ol {
+    display: flex;
+    margin: 10px;
+    list-style: none;
+  }
+}
