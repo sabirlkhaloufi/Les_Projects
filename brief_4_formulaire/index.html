@@ -2,63 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acheter Immobilier</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Acheter immobilier</title>
   </head>
   <body>
     <main>
       <div class="form">
-            <img src="img/logo.png" alt="logo" />
-            <h1>Acheter immobilier</h1>
-            <div class="search">
-            <label for="search">search</label><br />
+        <div class="logo">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+        <h1>Acheter immobilier</h1>
+        <form action="#">
+          <div class="ville">
+            <label for="ville">ville</label>
             <input
-                type="text"
-                name="search"
-                id="search"
-                placeholder="search"
-            /><br />
-            </div>
-            <div class="prix">
-            <label for="prix">Prix</label><br />
-            <input
-                type="number"
-                name="search"
-                id="search"
-                placeholder="min prix"
+              type="text"
+              id="ville"
+              name="ville"
+              placeholder="rechercher par ville"
             />
+          </div>
+          <div class="prix">
+            <input type="number" name="minprix" placeholder="min prix" />
+            <input type="number" name="maxprix" placeholder="max prix" />
+          </div>
+          <div class="chambres">
+            <label for="chambres">nombres des chambres</label>
             <input
-                type="number"
-                name="search"
-                id="search"
-                placeholder="max prix"
-            /><br />
-            </div>
-            <div class="chambres"></div>
-            <label for="chambres">nombre des chambres</label><br />
-            <input
-                type="number"
-                name="search"
-                id="chambre"
-                placeholder="nombre des chambres"
-            /><br />
-            </div>
-            <div class="proprieter">
-                <label for="proprieter"></label>
-                <select name="proprieter" id="proprieter">
-                    <option value="">maison</option>
-                </select>
-            </div>
-            <div class="checkbox">
-                
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox">Afficher immobilier vendu</label>
-            </div>
-            <div class="button">
-                <input type="submit" name="search" value="rechercher">
-            </div>
-    </div>
+              type="number"
+              id="chambres"
+              name="chambres"
+              placeholder="nombre des chambres"
+            />
+          </div>
+          <div class="chambres">
+            <label for="proprieter">type de proprieter</label>
+            <select name="proprieter" id="proprieter">
+              <option value="maison">maison</option>
+              <option value="studio">studio</option>
+              <option value="salle">salle</option>
+            </select>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox">Afficher immobilier vendu</label>
+          </div>
+          <div class="submit">
+            <input type="submit" name="Rechrcher" value="Rechrcher" />
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
