@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  height: 500px;
+  height: 600px;
   background-image: url(img/background.jpg);
-}
-.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .logo img {
   width: 80px;
@@ -20,11 +20,22 @@ h1 {
 label {
   color: white;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 15px;
+  width: 400px;
+  margin-top: 40px;
 }
 form div {
   margin-top: 20px;
@@ -32,9 +43,10 @@ form div {
 input,
 select {
   width: 100%;
+  height: 35px;
   padding: 5px 10px;
   border-radius: 10px;
-  border: solid rgb(0, 0, 0) 2px;
+  border: solid rgb(33, 11, 131) 2px;
 }
 .prix {
   display: grid;
@@ -43,15 +55,30 @@ select {
 .checkbox input {
   width: auto;
 }
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .submit input {
   border-style: none;
-  background-color: #217a0a;
-  color: white;
+  background-color: #00a1ff;
+  color: rgb(0, 0, 0);
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 /*media query pour responsive le site web*/
 @media screen and (min-width: 992px) {
-  body {
+  .form {
+    width: 500px;
+  }
+  input,
+  select {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 10px;
   }
 }
