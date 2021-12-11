@@ -19,6 +19,7 @@ h1 {
 }
 label {
   color: white;
+  margin: 10px;
 }
 main {
   display: flex;

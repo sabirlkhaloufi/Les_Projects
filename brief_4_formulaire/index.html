@@ -24,12 +24,12 @@
             />
           </div>
           <div class="prix">
-            <input type="number" name="minprix" placeholder="min prix" />
-            <input type="number" name="maxprix" placeholder="max prix" />
+            <input min="0" type="number" name="minprix" placeholder="min prix" />
+            <input min="0" type="number" name="maxprix" placeholder="max prix" />
           </div>
           <div class="chambres">
             <label for="chambres">nombres des chambres</label>
-            <input
+            <input min="0" max="6"
               type="number"
               id="chambres"
               name="chambres"
